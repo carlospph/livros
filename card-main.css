@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --ligth: white;
+  }
+  
+  .card {
+    text-align: left;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "texto image-card" "icones button-card";
+    gap: 7%;
+    align-items: center;
+    min-width: 280px;
+    height: auto;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem 0rem;
+  }
+  
+  .img-alura {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .text-one {
+    color: orange;
+  }
+  
+  .subtitle {
+    color: rgba(16, 16, 96, 0.9);
+    padding: 0.5rem 0;
+  }
+  
+  .texto p {
+    line-height: 150%;
+  }
+  
+  .image-card {
+    grid-area: image-card;
+  }
+  
+  .icones {
+    grid-area: icones;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .fa-heart,
+  .fa-bag-shopping {
+    font-size: 2rem;
+  }
+  
+  .button-card {
+    grid-area: button-card;
+  }
+  
+  .link-btn {
+    display: block;
+    background: orange;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+  }
+  

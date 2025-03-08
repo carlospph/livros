@@ -1,0 +1,163 @@
+@import url(carrossel.css);
+@import url(card-main.css);
+
+/* resetar elementos */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* cabelho - cor e seus icones */
+  header {
+    background: #f2f2f2;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+    position: relative;
+  }
+  
+  /* cabeçalho flex engloba tudo */
+  .cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* icones para o cabeçalho */
+  .cabecalho i {
+    font-size: 1.9rem;
+    cursor: pointer;
+  }
+  
+  /* titulo do menu = categoria */
+  .title__menu {
+    color: orange;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+  }
+  
+  /* container flex header */
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  /* menu principal - menu-mobile */
+  .menu-mobile {
+    background: #f2f2f2;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    width: 65vw;
+    display: none;
+  }
+  
+  /* icones xicará */
+  i.fa-java {
+    color: saddlebrown;
+    font-size: 2.5rem;
+  }
+  
+  /* links default */
+  .nav-link {
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  /* efeito ao passar o mouse no link */
+  .nav-link:hover {
+    background: orange;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .btn-toggle {
+    display: none;
+  }
+  
+  .btn-toggle:checked ~ .menu-mobile {
+    display: block;
+  }
+  
+  /* BANNER */
+  .banner {
+    background-image: linear-gradient(
+      to bottom right,
+      #1e3c72,
+      /* Azul escuro */ #6b90d0 /* Azul mais claro */
+    );
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* titulo do banner */
+  .banner .title {
+    font-size: 1.5rem;
+  }
+  
+  /* lema do banner */
+  .banner .lema {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+  
+  /* group do input do banner */
+  .group-input {
+    border: 1px solid white;
+    padding: 0.8rem .6rem;
+    background: transparent;
+    border-radius: 1.7rem;
+  }
+  
+  /* input do group-input do banner */
+  .group-input input {
+    background: transparent;
+    border: 0;
+    outline: none;
+  }
+  
+  /* icone de pesquisa do banner no input */
+  .group-input i {
+    color: white;
+  }
+  
+  /* aplicando cor no placeholder do campo */
+  .group-input input::placeholder {
+    color: white;
+    font-size: .8rem;
+  }
+
+  /* tamanho da imagem */
+  .swiper-slide img{
+    width: 100%;
+  }
+
+  /* ocultar as setinhas do swiper */
+  .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
+  
+
+  /* as bolinhas */
+  .swiper-pagination{
+    position: initial;
+    margin: .6rem 0;
+  }
+
+
+  /* fim do BANNER */
+  
+   
