@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- carrossel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <title>CN: Livros</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="container">
+
+                <input type="checkbox" id="toggle-menu" class="btn-toggle">
+
+                <label for="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <i class="fa-brands fa-java"></i>
+
+                <ul class="menu-mobile">
+                    <li class="title__menu">
+                        cagetorias
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">programação</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">front-end</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">infraestrutura</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">business</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">designer & ux</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <h2 class="title">Já sabe por onde começar?</h2>
+        <p class="lema">
+            Encontre em nossa estante o que precisa para seu desenvolvimento!
+        </p>
+
+        <div class="container group-input">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" placeholder="Qual será sua primeira leitura?">
+        </div>
+
+    </section>
+
+
+
+    <section class="carrossel">
+        <h2 class="titulo__carrossel">Novos lançamentos</h2>
+
+         <!-- Slider main container -->
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+         <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/images/front-end.png" alt="FrontEnd">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/javascript.png" alt="Javascript">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/lideranca.png" alt="Liderança">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/portugual.png" alt="Portugual">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/react.png" alt="FrontEnd">
+                </div>
+            
+            </div>
+           
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            
+        
+            <!-- card --> 
+              
+              <div class="card">
+              
+                <div class="texto">
+                  <h3 class="text-one">Talvez também se interesse por...</h3>
+                  <h3 class="subtitle">Angular 11 e Firebase</h3>
+                  <p>Construindo uma aplicação integrada com a plataforma do google</p>
+                </div>
+              
+                <div class="icones">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              
+                <div class="button-card">
+                  <a href="" class="link-btn">Saiba mais</a>
+                </div>
+              
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7xKQpnLTTOcyKQsqapAGF8SMBmBclpLZsA&s" alt="" class="img-alura">
+              
+              </div>
+        </div>
+
+    </section>
+
+
+    <section class="carrossel">
+        <h2 class="titulo__carrossel">mais vendidos</h2>
+
+        
+    </section>
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+
+    
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/eventos.js"></script>
+</body>
+
+</html>
+
+<!-- ainda bem que todos os dias o sol levanta a gente de novo, após a lua coloca pra dormir -->
