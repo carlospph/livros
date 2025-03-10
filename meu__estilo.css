@@ -336,7 +336,6 @@ footer{
     display: none;
   }
   
-  
   .card{
      margin: 0 auto;
   }
@@ -352,7 +351,6 @@ footer{
   .text__card{
     font-size: 1.3rem;
   }
-  
 
   .section__fast{
     border: 8px solid orange;
@@ -362,9 +360,7 @@ footer{
     font-size: 3rem;
     padding: 2rem 0 1.5rem 0;
   }
-  
-  
-  
+
   .main__topics{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -378,8 +374,6 @@ footer{
     text-align: center;
     font-size: 1.4rem;
   }
-  
-  
   
   /*newsletter*/
   .newsletter__content{
@@ -426,6 +420,6 @@ footer{
   }
 
     .links-bottom{
-      display: flex;
+      display: block;
   
 }
