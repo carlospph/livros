@@ -1,176 +1,377 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<script type="module" src="/@vite/client"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- icones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- carrosel -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- carrossel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-    <!-- css externo -->
-    <link rel="stylesheet" href="assets/css/estilos.css">
-
-    <title>CN: Livros</title>
+<link rel="stylesheet" href="my__styles.css" />
+<title>Menu checkbox</title>
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-            <div class="container">
+  <header>
+    <div class="wrapper">
+      <div class="header__content">
 
-                <input type="checkbox" id="toggle-menu" class="btn-toggle">
+        <div class="container">
+          <a href="" class="logo">Php</a>
+          <input type="checkbox" class="toggle-menu" id="btn-menu" />
 
-                <label for="toggle-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
+          <label for="btn-menu">
+            <i class="fa-solid fa-bars icone"></i>
+          </label>
 
-                <i class="fa-brands fa-java"></i>
+          <ul class="menu">
+            <li class="title__categorias">Categorias</li>
+            <li>
+              <a href="" class="nav-link">Últimos livros</a>
+            </li>
 
-                <ul class="menu-mobile">
-                    <li class="title__menu">
-                        cagetorias
-                    </li>
-                    <li>
-                        <a href="" class="nav-link">programação</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-link">front-end</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-link">infraestrutura</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-link">business</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-link">designer & ux</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="container">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <i class="fa-solid fa-user"></i>
-            </div>
+            <li>
+              <a href="" class="nav-link">Novos lançamentos</a>
+            </li>
+
+            <li>
+              <a href="" class="nav-link">Programação</a>
+            </li>
+
+            <li>
+              <a href="" class="nav-link">Tecnologia</a>
+            </li>
+          </ul>
         </div>
 
-    </header>
+        <ul class="linha-options">
+          <li>
+            <input type="checkbox" id="check-linha-categorias" class="toggle-check-linha" />
 
-    <section class="banner">
-        <h2 class="title">Já sabe por onde começar?</h2>
-        <p class="lema">
-            Encontre em nossa estante o que precisa para seu desenvolvimento!
-        </p>
+            <label for="check-linha-categorias">
+              <div class="title__categorias">Categorias</div>
+            </label>
 
-        <div class="container group-input">
-            <i class="fa-solid fa-search"></i>
-            <input type="text" placeholder="Qual será sua primeira leitura?">
+            <ul class="menu">
+              <li>
+                <a href="" class="nav-link">Últimos livros</a>
+              </li>
+
+              <li>
+                <a href="" class="nav-link">Novos lançamentos</a>
+              </li>
+
+              <li>
+                <a href="" class="nav-link">Programação</a>
+              </li>
+
+              <li>
+                <a href="" class="nav-link">Tecnologia</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Sobre</a>
+          </li>
+          <li>
+            <a href="">Contato</a>
+          </li>
+        </ul>
+
+        <div class="container">
+          <i class="fa-solid fa-heart icone"></i>
+          <i class="fa-solid fa-bag-shopping icone"></i>
+          <i class="fa-solid fa-user icone"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <section class="banner">
+    <div>
+      <h1 class="title">
+        já sabe por onde começar?
+      </h1>
+      <p class="cta">
+        Encontre em nossa estante o que precisa para seu desenvolvimento
+      </p>
+
+      <div class="group-input">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" placeholder="Qual será sua próxima leitura?">
+      </div>
+    </div>
+  </section>
+
+  <h2 class="title__book">
+    últimos lidos
+  </h2>
+
+  <section>
+
+    <div class="wrapper">
+
+
+
+      <div class="swiper mySwiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Guia%20Front-end.png?raw=true" alt="">
+          </div>
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Javascript.png?raw=true" alt="">
+          </div>
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Lideran%C3%A7a.png?raw=true" alt="">
+          </div>
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Portugol.png?raw=true" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="textos">
+          <h4 class="title__card">Talvez você também se interesse por...</h4>
+          <h4 class="subtitle__card">Angular 11 e Firebase</h4>
+          <p class="text__card">Construindo uma aplicação integrada com a plataforma do Google.</p>
+          <div class="icones__card">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
         </div>
 
-    </section>
+        <div class="image">
+          <img src="https://raw.githubusercontent.com/carlospph/exercicios/refs/heads/main/images/Angular.png" alt="">
+
+          <a href="" class="link__btn">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="title__book">
+    Novos lançamentos
+  </h2>
+
+  <section>
+    <div class="wrapper">
 
 
 
-    <section class="carrossel">
-        <h2 class="titulo__carrossel">Novos lançamentos</h2>
 
-         <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-pagination"></div>
 
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Guia%20Front-end.png?raw=true" alt="">
+          </div>
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Javascript.png?raw=true" alt="">
+          </div>
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Lideran%C3%A7a.png?raw=true" alt="">
+          </div>
+          <div class="swiper-slide"><img
+              src="https://github.com/carlospph/exercicios/blob/main/images/Portugol.png?raw=true" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
-         <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="assets/images/front-end.png" alt="FrontEnd">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/javascript.png" alt="Javascript">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/lideranca.png" alt="Liderança">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/portugual.png" alt="Portugual">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/react.png" alt="FrontEnd">
-                </div>
-            
-            </div>
-           
+      </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            
-        
-            <!-- card --> 
-              
-              <div class="card">
-              
-                <div class="texto">
-                  <h3 class="text-one">Talvez também se interesse por...</h3>
-                  <h3 class="subtitle">Angular 11 e Firebase</h3>
-                  <p>Construindo uma aplicação integrada com a plataforma do google</p>
-                </div>
-              
-                <div class="icones">
-                  <i class="fa-solid fa-heart"></i>
-                  <i class="fa-solid fa-bag-shopping"></i>
-                </div>
-              
-                <div class="button-card">
-                  <a href="" class="link-btn">Saiba mais</a>
-                </div>
-              
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7xKQpnLTTOcyKQsqapAGF8SMBmBclpLZsA&s" alt="" class="img-alura">
-              
-              </div>
+      <div class="card">
+        <div class="textos">
+          <div class="icones__like">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4 class="title__card">Autora do mês</h4>
+          <h4 class="subtitle__card">Juliana Alves</h4>
+          <p class="text__card">Analista de sistemas e escritora, Juliana é epecilista em front-end.</p>
+          <div class="icones__card">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
         </div>
 
-    </section>
+        <div class="image">
+          <img
+            src="https://raw.githubusercontent.com/carlospph/exercicios/4595e50a16c595fb8abbc3721806b6936eb6c004/images/Perfil-escritora%201.svg"
+            alt="">
 
-
-    <section class="carrossel">
-        <h2 class="titulo__carrossel">mais vendidos</h2>
-
-        
-    </section>
-
-
-
-
-
-
-
-    
-    
+          <a href="" class="link__btn">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-    
+  <section class="topics__visited">
+    <div class="wrapper">
+      <div class="topicos__content">
+        <h4>
+          TÓPICOS VISITADOS RECENTEMENTE
+        </h4>
 
-    
+        <ul class="main__topics">
+          <li>
+            android
+          </li>
+          <li>
+            marketing digital
+          </li>
+          <li>
+            agile
+          </li>
+          <li>
+            startup
+          </li>
+          <li>
+            html & css
+          </li>
+          <li>
+            python
+          </li>
+          <li>oo</li>
+          <li>java</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="wrapper">
+      <div class="newsletter__content">
+        <div>
+          <h2>Fique por dentro das novidades!</h2>
+          <p>
+            Atualizações de e-books, novos livros, promoções e outros.
+          </p>
+
+        </div>
+
+        <div class="group-input">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" placeholder="Cadastre seu e-mail">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer__content">
+        <h5>GrupoAlura</h5>
+        <h5>Por Carlos Nascimento</h5>
+
+        <h6 class="title__logo-bottom">PHPBook</h6>
+
+        <ul class="links-bottom">
+          <li class="title__footer">educação</li>
+          <li class="nav-link">
+            <i class="fa-solid fa-graduation-cap"></i> <span>Ead</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-regular fa-circle-play"></i> <span>Vídeo aulas</span>
+          </li>
+        </ul>
+
+        <ul class="links-bottom">
+          <li class="title__footer">cursos tecnologia</li>
+          <li class="nav-link">
+            <i class="fa-brands fa-html5"></i> <span>Html</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-css"></i> <span>Css</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-nfc-directional"></i> <span>Comunicação assertiva</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-solid fa-users"></i> <span>Relacionamento interpessoal</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-bootstrap"></i> <span>Bootstrap 5</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-figma"></i> <span>Figma para devs</span>
+          </li>
 
 
- 
+        </ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <ul class="links-bottom">
+          <li class="title__footer">Canais</li>
+          <li class="nav-link">
+            <i class="fa-brands fa-google"></i> <span> Services Google </span>
+          </li>
 
-    <script src="assets/js/eventos.js"></script>
+          <li class="nav-link">
+            <i class="fa-brands fa-codepen"></i> <span> Codepen </span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-github"></i> <span> GitHub </span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-wordpress"></i> <span> Wordpress </span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-gitlab"></i> <span> Gitlab</span>
+          </li>
+
+          <li class="nav-link">
+            <i class="fa-brands fa-php"></i> <span> Php.Net</span>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
 </body>
 
 </html>
+</body>
 
-<!-- ainda bem que todos os dias o sol levanta a gente de novo, após a lua coloca pra dormir -->
+</html>
