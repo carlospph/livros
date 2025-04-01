@@ -1,3 +1,5 @@
+
+/* resetar os dados  */
 *{
   padding: 0;
   margin: 0;
@@ -7,11 +9,14 @@
   text-decoration: none;
 }
 
+/* container de envelopamento máximo das páginas  */
 .wrapper{
   padding: 0 1rem;
   max-width: 1100px;
   margin: 0 auto;
 }
+
+
 
 :root{
   --primary: #f2f2f2;
@@ -138,8 +143,9 @@ width:100%;
   outline: none;
   padding: .5rem 1rem;
   background: transparent;
-  text-align: center;
+  text-align: left;
   width: 100%;
+  font-size:18px;
 }
 
 .group-input input::placeholder{
@@ -191,8 +197,7 @@ width:100%;
   display: flex;
   gap: 1.5rem;
   background: var(--light);
-  /*border-radius: .4rem;*/
-  margin: .5rem;
+    margin: .5rem;
   padding: 1rem;
   justify-content: space-between;
 }
@@ -232,7 +237,6 @@ width:100%;
 
 
 
-
 /*topicos---- ----- ------------- ------------- ----- ----- ----- ----- */
 .topics__visited{
   background: var(--dark);
@@ -257,6 +261,7 @@ width:100%;
   color: var(--light);
   padding: 1rem;
   text-transform: capitalize;
+  cursor: pointer;
 }
 /*fim dos  topicos---- ----- ------------- ------------- ----- ----- ----- ----- */
 
@@ -300,8 +305,55 @@ footer{
 .links-bottom{
   display: none;
 }
-/*fim do footer ---- ----- ------------- ------------- ----- ----- ----- ----- */
+/*fim do footer ---- ----- ------------- - ------------ -------------------- ------------------ ------------ ------------ ---------------- --------------- ---------------- ----------
+------------ ----- ----- ----- ----- */
 
+
+@media(min-width: 200px) and (max-width:360px){
+  /* cards  */
+  .icones__card{
+    margin: 0 auto;
+    margin-top: .4rem;
+    padding: 0;
+    border: 2px darkblue solid;
+  }
+
+  /* icones do card  */
+  .icones__card i{
+    padding: 0;
+  }
+  /* cartão  */
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  /* imagem do cartão  */
+  .card img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* os topicos laranjados  */
+  .main__topics{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+
+  /* cada um dos topicos  */
+  .topics__visited li{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px 10px;
+    margin: 0;
+  }
+}
 
 @media screen and (min-width: 769px){
   .banner{
@@ -422,4 +474,5 @@ footer{
     .links-bottom{
       display: block;
   
+}
 }
